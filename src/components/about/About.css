@@ -1,0 +1,8 @@
+.aboutContainer {
+  display: flex;
+  align-items: center;
+}
+.intro, .aboutContent {
+  width: 50vw;
+  padding: 100px;
+}

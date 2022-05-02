@@ -7,4 +7,4 @@ This app uses:
 2. 
 
 ## Wireframes
-
+![wireframe](./src/assets/pics/fireframe.png)
