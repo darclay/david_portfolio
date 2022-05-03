@@ -1,12 +1,24 @@
 import './Home.css'
-import Banner from '../../components/banner/Banner'
+// import Banner from '../../components/banner/Banner'
 import About from '../../components/about/About'
+// import heroPhoto from '../../assets/pics/main_photo.jpg'
+import background from '../../assets/pics/background.png'
+import middleground from '../../assets/pics/middleground.png'
+import foreground from '../../assets/pics/foreground.png'
 
 export default function Home() {
   return (
     <div>
-      <Banner/>
-      <About/>
+      <div className="scrollContainer">
+        <header>  
+          <img className="background" src={background}/>
+          {/* <img className="middleground" src={middleground}/> */}
+          <img className="foreground" src={foreground}/>
+        </header>
+        <section>
+          <About/>
+        </section>
+      </div>      
     </div>
   )
 }

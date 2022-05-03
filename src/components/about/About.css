@@ -1,13 +1,23 @@
+.aboutDiv {
+  background-color: #4c4949;
+  color: white;
+  height: 100vh;
+}
 .aboutContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  padding-top: 20%;
 }
 .intro, .aboutContent {
-  width: 300px;
-  padding: 30px;
+  display: inline-block;
+  width: 45vw;
+  text-align: center;
 }
 .intro {
-  font-size: 4em;
-  text-align: center;
+  font-size: 5rem;
+  transition: transform 2s;
+}
+.intro:hover {
+  transform: rotate(60deg);
+}
+.aboutContent {
+  margin-right: 40px;
 }

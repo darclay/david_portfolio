@@ -3,7 +3,7 @@ import Navigation from '../navigation/Navigation'
 
 export default function About() {
   return (
-    <div>
+    <div className="aboutDiv">
       <Navigation/>
 
       <div className="aboutContainer">
