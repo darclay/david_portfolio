@@ -8,7 +8,7 @@ export default function About() {
 
       <div className="aboutContainer">
         <h1 className="intro">Hello<br/>I'm Dave</h1>
-        <p className="aboutContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p className="aboutContent">Mountain Biker, Sender, Coder, Peopler?...are just a few words that represent me.  Hello again and nice to meet you.  I am a people person who spent the last 17 years in law enforcement. I take that same passion for helping others out on the streets and now code to help people virtually.  Outside of developing I enjoy being on an adventure with my wife, two boys, and two dogs (Bailey & Sage)  Check out some of my work below and don't hesitate to<span>click here to chat</span></p>
       </div>
     </div>
   )

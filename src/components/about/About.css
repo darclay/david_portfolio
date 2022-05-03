@@ -1,8 +1,13 @@
 .aboutContainer {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 .intro, .aboutContent {
-  width: 50vw;
-  padding: 100px;
+  width: 300px;
+  padding: 30px;
+}
+.intro {
+  font-size: 4em;
+  text-align: center;
 }
