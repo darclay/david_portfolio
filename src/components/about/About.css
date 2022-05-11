@@ -4,7 +4,7 @@
   height: 100vh;
 }
 .aboutContainer {
-  padding-top: 20%;
+  padding-top: 10%;
 }
 .intro, .aboutContent {
   display: inline-block;
@@ -16,7 +16,7 @@
   transition: transform 2s;
 }
 .intro:hover {
-  transform: rotate(60deg);
+  transform: rotate(30deg);
 }
 .aboutContent {
   margin-right: 40px;
