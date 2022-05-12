@@ -1,0 +1,33 @@
+.ProjectsDiv {
+  width: 100vw;
+}
+.projectGroup {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.desktopView {
+  position: relative;
+  height: 200px;
+}
+.mobilePhoneView {
+  position: relative;
+  height: 200px;
+}
+.mobilePic, .mobile, .desktopPic, .desktop {
+  position: absolute;
+  height: 100%;
+}
+.mobilePic {
+  left: 46px;
+  transform: scale(0.95, 0.8);
+}
+.desktopPic {
+  z-index: 1;
+}
+.desktop {
+  left: 30px;
+  top: -5px;
+  transform: scale(.9, .8);
+}
