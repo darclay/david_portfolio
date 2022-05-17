@@ -1,11 +1,21 @@
 .ProjectsDiv {
-  width: 100vw;
+  padding-top: 50px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
 }
 .projectGroup {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  justify-content: space-evenly;
+  position: relative;
+}
+.mobilePic, .mobile, .desktopPic, .desktop {
+  height: 100%;
+}
+.mobile {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }
 .desktopView {
   position: relative;
@@ -14,20 +24,37 @@
 .mobilePhoneView {
   position: relative;
   height: 200px;
-}
-.mobilePic, .mobile, .desktopPic, .desktop {
-  position: absolute;
-  height: 100%;
+  transform: translate(-20px, -125px);
 }
 .mobilePic {
-  left: 46px;
+  position: absolute;
+  left: 47px;
   transform: scale(0.95, 0.8);
 }
 .desktopPic {
-  z-index: 1;
+  position: absolute;
+  left: 29px;
+  top: -9px;
+  transform: scale(0.95, 0.8);
 }
-.desktop {
-  left: 30px;
-  top: -5px;
-  transform: scale(.9, .8);
+.hoverInfo {
+  position: absolute;
+  left: -30px;
+  top: -10px;
+  width: 120%;
+  height: 300px;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(55, 46, 46, 0.7);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.projectDescription {
+  padding: 40px;
+  font-weight: bold;
+  text-shadow: #222;
+}
+.hidden {
+ visibility: hidden;
 }

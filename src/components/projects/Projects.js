@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './Projects.css'
 import Laptop from '../../assets/pics/laptop.png'
 import Mobile from '../../assets/pics/smartphone.png'
@@ -61,22 +62,37 @@ export default function Projects() {
       }
   ]
 
+  const [hiddenStatus, setHiddenStatus] = useState('hidden')
+
+  function handleShow(ev){
+    setHiddenStatus('')
+  }
+  function handleHidden(){
+    setHiddenStatus('hidden')
+  }
+
   return (
     <div className="ProjectsDiv">
-      <div className="projectGroup">
-        
-        <div className="desktopView">
-          <img className="desktopPic" src={Laptop}/>
-          <img className="desktop" src={RollDesktop}/>
-        </div>
+      {projectData.map((project, index) => (
+        <div key={index} className="projectGroup" onMouseOver={(ev)=>{handleShow(ev)}}
+        onMouseOut={(ev)=>{handleHidden(ev)}}
+        >
+          <div key={index} className={`${hiddenStatus} hoverInfo`}>
+            <p className="projectDescription">{project.miscInfo}</p>
+          </div> 
 
-        <div className="mobilePhoneView">
-          <img className="mobilePic" src={RollMobile}/>
-          <img className="mobile" src={Mobile}/>
-        </div>
+          <div className="desktopView">
+            <img className="desktopPic" src={project.desktopPic}/>
+            <img className="desktop" src={Laptop}/>
+          </div>
+          
+          <div className="mobilePhoneView">
+            <img className="mobilePic" src={project.mobilePic}/>
+            <img className="mobile" src={Mobile}/>
+          </div>
 
-      </div>
+        </div>
+      ))}
     </div>
-
   )
 }
