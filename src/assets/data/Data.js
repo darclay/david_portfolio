@@ -8,6 +8,8 @@ import CollisionCourseDesktop from '../pics/CollisionCourseDesktop.png'
 import CollisionCourseMobile from '../pics/CollisionCourseMobile.png'
 import PoopetratorDesktop from '../pics/PoopetratorDesktop.png'
 import PoopetratorMobile from '../pics/PoopetratorMobile.png'
+import BrandonGuruleDesktop from '../pics/BrandonGuruleDesktop.png'
+import BrandonGuruleMobile from '../pics/BrandonGuruleMobile.png'
 
 const projectData = [
   {
@@ -26,7 +28,7 @@ const projectData = [
   desktopPic: hekatesDesktop,
   mobilePic: hekatesMobile,
   toolsUsed: "Reactjs, Hooks CSS, Ruby on Rails, PostgreSQL, Heroku, Netlify, Git, Github, JWT & Bcrypt(auth)",
-  miscInfo: ""
+  miscInfo: "Hekates Bees is a dual purpose mock site.  This is an e-commerce site selling bee products and a blog."
   },
   {
   projectName: "Everfree Outdoors",
@@ -54,7 +56,16 @@ const projectData = [
     mobilePic: PoopetratorMobile,
     toolsUsed: "React, Axios, Hooks, CSS, Airtable, Whimsical, Git, Github, Netlify",
     miscInfo: "This is a spoof site for people to document dog poop in their neighborhood.  PMVP is to move this to a mobile platform (i.e. React Native)"
-    }
+    },
+    {
+      projectName: "Brandon Portfolio",
+      projectSite: "http://www.brandongurule.com",
+      githubSite: "https://github.com/darclay/brandonportfolio",
+      desktopPic: BrandonGuruleDesktop,
+      mobilePic: BrandonGuruleMobile,
+      toolsUsed: "React, CSS, Bootstrap, Git, Github, Netlify",
+      miscInfo: "This site is for Brandon Gurule and for showing off his work as an animator."
+      }
 ]
 
 export default projectData
