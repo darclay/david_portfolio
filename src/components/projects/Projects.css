@@ -49,3 +49,10 @@
 .hidden {
  visibility: hidden;
 }
+.showMore {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.showMore:hover {
+  opacity: 1;
+}
