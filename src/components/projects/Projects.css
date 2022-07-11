@@ -51,7 +51,7 @@
 }
 .showMore {
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 1s ease-in;
 }
 .showMore:hover {
   opacity: 1;
